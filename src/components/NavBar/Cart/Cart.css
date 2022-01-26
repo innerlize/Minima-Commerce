@@ -1,0 +1,17 @@
+.fa, .far, .fas {
+	font-family: FontAwesome !important;
+}
+
+.cart {
+	display: flex;
+	align-items: center;
+	margin-right: 50px;
+}
+
+.cart span {
+	margin-right: 10px;
+}
+
+.cart div {
+	font-size: 30px;
+}

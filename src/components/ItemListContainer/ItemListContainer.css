@@ -1,0 +1,14 @@
+section {
+	width: 100%;
+	height: 50vh;
+	margin-top: 50px;
+	background-color: #CCCCCC;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section h3 {
+	font-size: 40px;
+	color: #222222;
+}

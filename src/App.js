@@ -1,8 +1,14 @@
-import NavBar from './components/NavBar.js';
+import './App.css';
+import 'font-awesome/css/font-awesome.min.css';
+import NavBar from './components/NavBar/NavBar.js';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer.js'
 
 function App() {
   return (
-    <NavBar />
+    <>
+      <NavBar />
+      <ItemListContainer greetings='Welcome to Minima Commerce!' />
+    </>
   );
 }
 

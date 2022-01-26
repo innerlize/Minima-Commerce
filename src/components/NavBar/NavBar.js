@@ -1,4 +1,5 @@
 import './NavBar.css'
+import Cart from './Cart/Cart.js'
 
 function NavBar() {
   return (
@@ -8,10 +9,7 @@ function NavBar() {
         <p>MINIMA COMMERCE</p>
       </a>
       <ul>
-        <li className='cart'>
-          <span>1</span>
-          <div></div>
-        </li>
+        <Cart />
         <li><a href="#">PRODUCTS</a></li>
         <li><a href="#">ABOUT US</a></li>
         <li><a href="#">CONTACT</a></li>
