@@ -21,6 +21,6 @@ const ItemCount = ({ stock }) => {
       <button className='buttonCounter sum' onClick={sumCounter}><i className="fas fa-plus"></i></button>
     </div>
   );
-}
+};
 
 export default ItemCount;
