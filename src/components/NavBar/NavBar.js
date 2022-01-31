@@ -4,10 +4,10 @@ import Cart from './Cart/Cart.js'
 function NavBar() {
   return (
     <nav>
-      <a href="" className='logo'>
+      <button className='logo'>
         <div></div>
         <p>MINIMA COMMERCE</p>
-      </a>
+      </button>
       <ul>
         <Cart />
         <li><a href="#">PRODUCTS</a></li>

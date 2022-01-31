@@ -1,3 +1,14 @@
+
+/*Button style resetter.*/
+
+button {
+	background-color: initial;
+	border: initial;
+	cursor: pointer;
+}
+
+/*----------------------------------------------------------------------------------*/
+
 nav {
 	display: flex;
 	justify-content: space-between;

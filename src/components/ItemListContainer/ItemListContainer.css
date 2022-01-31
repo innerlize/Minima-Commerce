@@ -4,6 +4,7 @@ section {
 	margin-top: 50px;
 	background-color: #CCCCCC;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }

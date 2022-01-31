@@ -1,0 +1,23 @@
+.counterElements {
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.counterElements button {
+	font-size: 13px;
+	padding: 4px 15px;
+	background-color: #F2F2F2;
+}
+
+.counterElements button i {
+	font-style: normal;
+	color: #222222;
+}
+
+.counterElements span {
+	font-size: 40px;
+	color: #222222;
+	width: 70px;
+	text-align: center;
+}

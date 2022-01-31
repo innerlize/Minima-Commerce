@@ -1,13 +1,11 @@
-import './ItemListContainer.css'
-
-// function Greetings({ greetings }) {
-//   return <h3>{greetings}</h3>;
-// }
+import ItemCount from './ItemCount/ItemCount.js';
+import './ItemListContainer.css';
 
 function ItemListContainer({ greetings }) {
   return (
     <section>
         <h3> { greetings } </h3>
+        <ItemCount stock='13' />
     </section>
   );
 }
