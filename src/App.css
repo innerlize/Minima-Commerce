@@ -5,15 +5,15 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-decoration: none;
-  font-family: 'Red Hat Text', sans-serif;
-  color: #F2F2F2;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  font-family: 'Red Hat Text', sans-serif !important;
+  color: #F2F2F2 !important;
 }
 
 body {
-  background-color: #222222;
-  padding: 50px;
+  background-color: #222222 !important;
+  padding: 50px !important;
 }
