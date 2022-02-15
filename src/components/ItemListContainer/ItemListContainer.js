@@ -4,7 +4,7 @@ import ItemList from './ItemList/ItemList.js';
 import { getMock } from '../helpers/mock.js';
 import './ItemListContainer.css';
 
-function ItemListContainer({ greetings }) {
+function ItemListContainer() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ function ItemListContainer({ greetings }) {
     .then(res => setData(res))
   }, [])
 
-  console.log(data)
+  // console.log(data)
 
   return (
     <section>

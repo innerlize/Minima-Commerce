@@ -1,22 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import ItemCount from './ItemCount/ItemCount.js';
-import ItemList from './ItemList/ItemList.js';
-import { getMock } from '../helpers/mock.js';
+import ItemDetail from './ItemList/ItemDetail/ItemDetail.js';
+import { getItem } from '../helpers/mock.js';
 import './ItemDetailContainer.css';
 
 function ItemDetailContainer() {
-  const [data, setData] = useState([]);
+  const [unicItem, setUnicItem] = useState([]);
 
   useEffect(() => {
-    getMock
-    .then(res => setData(res))
+    getItem
+    .then(res => setUnicItem(res))
   }, [])
-
-  console.log(data)
 
   return (
     <section>
-        <ItemList products={data} />
+        <ItemDetail unicItem={unicItem} />
     </section>
   );
 }

@@ -2,12 +2,12 @@ import React from 'react';
 import ItemDetail from './ItemDetail/ItemDetail.js';
 import './ItemList.css';
 
-const ItemList = ({ products }) => {
+const ItemList = ({ item }) => {
 	return (
 		<div className='item-container'>
 
 			{
-				products?.map((product) => <ItemDetail key={product.id} product={product} />)
+				item?.map((item) => <ItemDetail key={item.id} item={item} />)
 			}
 
 		</div>
