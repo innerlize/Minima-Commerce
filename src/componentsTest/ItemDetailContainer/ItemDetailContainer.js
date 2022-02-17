@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ItemCount from './ItemCount/ItemCount.js';
-import ItemDetail from './ItemList/ItemDetail/ItemDetail.js';
+import ItemDetail from './ItemDetail/ItemDetail.js';
 import { getItem } from '../helpers/mock.js';
 import './ItemDetailContainer.css';
 

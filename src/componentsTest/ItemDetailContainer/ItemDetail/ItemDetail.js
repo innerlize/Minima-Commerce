@@ -1,8 +1,8 @@
 import React from 'react';
-import ItemCount from '../../ItemCount/ItemCount.js';
+import ItemCount from '../ItemCount/ItemCount.js';
 import { Card, Button } from 'react-bootstrap';
 import './ItemDetail.css';
-import '../ItemList.css';
+import './ItemList.css';
 
 const ItemDetail = ({ unicItem }) => {
   const { id, imagen, desc, switches, rgb, name, price, stock, category } = unicItem
