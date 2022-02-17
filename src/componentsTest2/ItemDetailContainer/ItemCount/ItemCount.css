@@ -1,0 +1,40 @@
+.counterElements {
+	display: flex !important;
+	align-items: center !important;
+}
+
+.counterElements button {
+	font-size: 13px !important;
+	padding: 4px 15px !important;
+	background-color: #F2F2F2 !important;
+}
+
+.counterElements button i {
+	font-style: normal !important;
+	color: #222222 !important;
+}
+
+.counterElements span {
+	font-size: 40px !important;
+	font-weight: 400;
+	color: #F2F2F2 !important;
+	width: 65px !important;
+	text-align: center !important;
+}
+
+.buttonCounter {
+	transition: all .15s !important;
+	border-radius: 0.25rem;
+}
+
+.buttonCounter i {
+	transition: all .15s !important;
+}
+
+.buttonCounter:hover {
+	background-color: #777777 !important;
+}
+
+.buttonCounter:hover > i {
+	color: #F2F2F2 !important;
+}

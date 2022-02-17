@@ -1,0 +1,7 @@
+.item-container {
+	width: 100%;
+	display: flex !important;
+	justify-content: center !important;
+	flex-wrap: wrap !important;
+	gap: 15px !important;
+}

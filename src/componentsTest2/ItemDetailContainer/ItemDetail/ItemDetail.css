@@ -1,0 +1,63 @@
+.unicItem {
+	width: 50%;
+	height: 100% !important;
+	text-align: center !important;
+	background-color: #222222 !important;
+	border: none !important;
+	margin-bottom: 20px !important;
+}
+
+.unicItem img {
+	max-height: 250px !important;
+	object-fit: cover !important;
+}
+
+.unicItem .card-body {
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	align-items: center !important;
+	padding: 15px !important;
+}
+
+.unicItem .card-body div {
+	text-transform: uppercase !important;
+	font-weight: 600 !important;
+	padding: 10px !important;
+}
+
+.unicItem .card-body p {
+	font-weight: 300 !important;
+}
+
+.unicItem .card-body p:nth-child(2) {
+	margin: 5px 0 0 0 !important;
+	padding: 0 20px !important;
+}
+
+.unicItem .card-body p:nth-child(3) {
+	margin: 5px 0 !important;
+}
+
+.unicItem .card-body p:nth-child(4) {
+	font-weight: 400 !important;
+	margin: 0 0 5px 0 !important;
+}
+
+.unicItem .card-body p:nth-child(5) {
+	font-weight: 400 !important;
+	margin: 0 0 20px 0 !important;
+}
+
+.unicItem button {
+	background-color: #F2F2F2 !important;
+	color: #222222 !important;
+	padding: 4px 13px !important;
+	text-transform: uppercase !important;
+	font-weight: 600 !important;
+}
+
+.unicItem button:hover {
+	background-color: #777777 !important;
+	color: #F2F2F2 !important;
+}

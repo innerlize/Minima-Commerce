@@ -1,0 +1,18 @@
+.productsNav {
+	margin-top: 50px !important;
+	background-color: rebeccapurple;
+	padding: 10px 0 !important;
+}
+
+.productsNav ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.productsNav ul li a {
+	font-weight: 500;
+}
+
+.productsNav ul li a:hover {
+	color: #9B9B9B !important;
+}

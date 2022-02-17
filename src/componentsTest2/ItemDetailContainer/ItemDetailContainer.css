@@ -1,0 +1,15 @@
+section {
+	width: 100% !important;
+	height: 100% !important;
+	background-color: #CCCCCC !important;
+	display: flex !important;
+	flex-direction: column !important;
+	justify-content: center !important;
+	align-items: center !important;
+	padding: 30px 0 !important;
+}
+
+section h3 {
+	font-size: 40px !important;
+	color: #222222 !important;
+}
