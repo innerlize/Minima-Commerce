@@ -22,7 +22,7 @@ const ItemDetail = ({ unicItem }) => {
             RGB: {rgb}
           </Card.Text>
           <Card.Text>
-            $ {price}
+            ${price}
           </Card.Text>
           <Button variant="primary">Add To Cart</Button>
           <ItemCount stock={stock} />

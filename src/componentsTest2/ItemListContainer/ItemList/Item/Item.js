@@ -5,6 +5,7 @@ import './Item.css';
 
 const Item = ({ product }) => {
   const { id, imagen, desc, name, price, stock, category } = product
+  console.log(product)
 
   return (
     <Card className='item'>
@@ -15,9 +16,9 @@ const Item = ({ product }) => {
           {desc}
         </Card.Text>
         <Card.Text>
-          $ {price}
+          ${price}
         </Card.Text>
-        <Link to='/item/${item.id}'>
+        <Link to={`/item/${id}`}>
           <Button variant="primary">More Details</Button>
         </Link>
        </Card.Body>
