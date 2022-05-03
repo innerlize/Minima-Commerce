@@ -14,8 +14,8 @@ const Routes = () => {
     		<NavBarProducts />
     		<Switch>
     			<Route path='/Minima-Commerce' element={<ItemListContainer />} />
-    			<Route path='/category/:categoryId' element={<ItemListContainer />} />
-    			<Route path='/item/:itemId' element={<ItemDetailContainer />} />
+    			<Route path='/Minima-Commerce/category/:categoryId' element={<ItemListContainer />} />
+    			<Route path='/Minima-Commerce/item/:itemId' element={<ItemDetailContainer />} />
     			<Route path='*' element={<NotFound />} />
     		</Switch>
 		</BrowserRouter>
