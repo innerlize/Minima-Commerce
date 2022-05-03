@@ -13,7 +13,7 @@ const Routes = () => {
     		<NavBar />
     		<NavBarProducts />
     		<Switch>
-    			<Route path='/' element={<ItemListContainer />} />
+    			<Route path='/Minima-Commerce' element={<ItemListContainer />} />
     			<Route path='/category/:categoryId' element={<ItemListContainer />} />
     			<Route path='/item/:itemId' element={<ItemDetailContainer />} />
     			<Route path='*' element={<NotFound />} />
