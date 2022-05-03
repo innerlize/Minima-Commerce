@@ -6,11 +6,11 @@ function NavBarProducts() {
 	return(
 		<nav className='productsNav'>
 			<ul>
-				<li><Link to='/'>ALL</Link></li>
-				<li><Link to='category/keyboard'>KEYBOARDS</Link></li>
-				<li><Link to='category/mouse'>MOUSES</Link></li>
-				<li><Link to='category/monitor'>MONITORS</Link></li>
-				<li><Link to='category/mousepad'>MOUSEPADS</Link></li>
+				<li><Link to='/Minima-Commerce'>ALL</Link></li>
+				<li><Link to='/Minima-Commerce/category/keyboard'>KEYBOARDS</Link></li>
+				<li><Link to='/Minima-Commerce/category/mouse'>MOUSES</Link></li>
+				<li><Link to='/Minima-Commerce/category/monitor'>MONITORS</Link></li>
+				<li><Link to='/Minima-Commerce/category/mousepad'>MOUSEPADS</Link></li>
 			</ul>
 		</nav>
 	)

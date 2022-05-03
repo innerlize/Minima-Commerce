@@ -5,7 +5,7 @@ import './NavBar.css';
 function NavBar() {
   return (
     <nav className='pageNav'>
-      <Link to='/' className='logo'>
+      <Link to='/Minima-Commerce' className='logo'>
         <div></div>
         <p>MINIMA COMMERCE</p>
       </Link>
