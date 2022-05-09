@@ -46,7 +46,6 @@
 
 .unicItem .card-body p:nth-child(5) {
 	font-weight: 400 !important;
-	margin: 0 0 20px 0 !important;
 }
 
 .unicItem button {
@@ -55,9 +54,19 @@
 	padding: 4px 13px !important;
 	text-transform: uppercase !important;
 	font-weight: 600 !important;
+	transition: all .15s;
 }
 
 .unicItem button:hover {
 	background-color: #777777 !important;
 	color: #F2F2F2 !important;
+}
+
+.unicItem .card-body .addToCartContainer {
+	text-transform: none !important;
+}
+
+.unicItem .card-body .addToCartContainer .productAdded {
+	margin: 17px 0 10px 0 !important;
+	color: lightgoldenrodyellow !important;
 }

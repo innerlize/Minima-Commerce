@@ -18,6 +18,7 @@ function getProduct(id) {
 };
 
 function ItemDetailContainer() {
+
   const [product, setProduct] = useState([]);
   const itemId = useParams().itemId;
 
