@@ -38,6 +38,8 @@ export function CartContextProvider({ children }) {
 		return true;
 	}
 
+	const contextFunction = () => console.log('Este contexto me está haciendo enojar, pero al menos ahora funciona :)')
+
 	return(
 		<CartContext.Provider value={{ contextFunction, cart, addToCart }}>
 			{children}
