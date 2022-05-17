@@ -13,13 +13,13 @@ function getProduct(id) {
 
       resolve(productFound);
       reject(new Error('Error de Conexión'));
-    }, 500);
+    }, 1500);
   });
 };
 
 function ItemDetailContainer() {
 
-  const [product, setProduct] = useState([]);
+  const [product, setProduct] = useState();
   const itemId = useParams().itemId;
 
   useEffect(() => {
