@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import productsDB from '../../ItemMocks/products/products.js';
+import productsDB from '../../ItemDataBase/products.js';
 import Item from './Item/Item.js';
 import './ItemList.css';
 

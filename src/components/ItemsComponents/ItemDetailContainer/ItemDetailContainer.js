@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail/ItemDetail.js';
-import productsDB from '../ItemMocks/products/products.js';
+import { getSingleProduct } from '../ItemDataBase/firebase.js';
+// import productsDB from '../ItemDataBase/products.js';
 import './ItemDetailContainer.css';
 
-function getProduct(id) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const productFound = productsDB.find( (product) => {
-        return id === product.id
-      })
+// function getProduct(id) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const productFound = productsDB.find( (product) => {
+//         return id === product.id
+//       })
 
-      resolve(productFound);
-      reject(new Error('Error de Conexión'));
-    }, 1500);
-  });
-};
+//       resolve(productFound);
+//       reject(new Error('Error de Conexión'));
+//     }, 1500);
+//   });
+// };
 
 function ItemDetailContainer() {
 
@@ -23,7 +24,7 @@ function ItemDetailContainer() {
   const itemId = useParams().itemId;
 
   useEffect(() => {
-    getProduct(itemId).then(resPromise => {
+    getSingleProduct(itemId).then(resPromise => {
       setProduct(resPromise)
     }).catch((errorPromise) => console.log(errorPromise));
   }, [itemId]);

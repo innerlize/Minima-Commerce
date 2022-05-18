@@ -34,9 +34,6 @@ const ItemDetail = ({ product }) => {
               Switches type: {product.switches}
             </Card.Text>
             <Card.Text>
-              RGB: {product.rgb}
-            </Card.Text>
-            <Card.Text>
               ${product.price}
             </Card.Text>
 
