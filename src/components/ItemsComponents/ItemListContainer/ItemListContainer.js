@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemList from './ItemList/ItemList.js';
-import { getProducts, getProductsByCategory } from '../ItemDataBase/firebase.js';
+import { getProducts, getProductsByCategory } from '../../../Database/firebase.js';
 // import productsDB from '../ItemDataBase/products.js';
 import './ItemListContainer.css';
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import productsDB from '../../ItemDataBase/products.js';
+import productsDB from '../../../../Database/firebase.js';
 import Item from './Item/Item.js';
 import './ItemList.css';
 

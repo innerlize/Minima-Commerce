@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getFirestore, doc, getDoc, getDocs, query, where, collection } from 'firebase/firestore/lite';
+import { getFirestore, doc, getDoc, getDocs, setDoc, addDoc, query, where, collection, Timestamp } from 'firebase/firestore/lite';
 
 const firebaseConfig = {
   apiKey: "AIzaSyB2-pwanlI36oxe8GgwRSXGWHiHl_ZWGCQ",
@@ -61,6 +61,23 @@ export async function getSingleProduct(id) {
       ... productSingleSnap.data(),
       id: productSingleSnap.id
   }
+}
+
+// ------------------------------------------------------------------------------------------------------
+
+export async function createBuyOrder(orderData) {
+  const buyTimestamp = Timestamp.now();
+  const orderWithBuyDate = {
+    ... orderData,
+    date: buyTimestamp
+  }
+
+  const MyCollection = collection(firestoreDB, 'buyOrders');
+
+  const orderDoc = await addDoc(MyCollection, orderWithBuyDate);
+
+  console.log('Orden lista con ID: ', orderDoc.id);
+  console.log('Orden lista con data: ', orderDoc.data());
 }
 
 // ------------------------------------------------------------------------------------------------------

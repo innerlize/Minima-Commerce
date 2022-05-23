@@ -50,21 +50,20 @@ export function CartContextProvider({ children }) {
 
 	const totalProductsInCart = () => {
 
-		let total = cart.reduce((total, currentItem) => (total + parseInt(currentItem.stock)), 0)
+		const totalItems = cart.reduce((total, currentItem) => (total + parseInt(currentItem.stock)), 0)
 
-		return total;
+		return totalItems;
 	}
 
 	const calcTotalPrice = () => {
-		const total = 0;
-		return total;
-	}
 
-	const contextFunction = () => console.log('Este contexto me está haciendo enojar, pero al menos ahora funciona :)')
+		const totalPrice = cart.reduce((Total, item) => Total + (+item.price * +item.stock), 0);
+		
+		return totalPrice;
+	}
 
 	return(
 		<CartContext.Provider value={{
-										contextFunction,
 										cart,
 										addToCart,
 										removeFromCart,

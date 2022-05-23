@@ -1,10 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useCartContext from '../ItemContext/CartContext.js';
+import { createBuyOrder } from '../../../Database/firebase.js';
 
 function CartView() {
 	const { cart, removeFromCart, clearCart, totalProductsInCart, calcTotalPrice } = useCartContext();
-	console.log('Cart', cart)
+
+	function handleBuyOrder() {
+		const buyOrder = {
+			buyer: {
+				name: 'Alan',
+				phone: '11223344',
+				email: 'xamp@mincom.com'
+			},
+			items: [... cart],
+			total: calcTotalPrice()
+		}
+
+		createBuyOrder(buyOrder);
+	}
 
 	if (cart.length === 0) {
 		return <div style={{ textAlign: 'center' }}>
@@ -26,8 +40,9 @@ function CartView() {
 				})
 			}
 
-			<p>Total price: ${cart.reduce((Total, item) => Total + (+item.price * +item.stock), 0)}</p>
+			<p>Total price: ${calcTotalPrice()}</p>
 			<button onClick={clearCart}>Empty Cart</button>
+			<div onClick={handleBuyOrder}>Buy!</div>
 		</div>
 	}
 }
