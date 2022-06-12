@@ -1,4 +1,4 @@
-section {
+.productContainer {
 	width: 100% !important;
 	height: 100% !important;
 	background-color: #CCCCCC !important;
@@ -9,7 +9,7 @@ section {
 	padding: 30px 0 !important;
 }
 
-section h3 {
+.productContainer h3 {
 	font-size: 40px !important;
 	color: #222222 !important;
 }

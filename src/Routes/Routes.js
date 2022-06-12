@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes as Switch } from 'react-router-dom';
-import NavBar from '../NavBarComponents/NavBar/NavBar.js';
-import NavBarProducts from '../NavBarComponents/NavBarProducts/NavBarProducts.js';
-import ItemListContainer from '../ItemsComponents/ItemListContainer/ItemListContainer.js';
-import ItemDetailContainer from '../ItemsComponents/ItemDetailContainer/ItemDetailContainer.js';
-import CartView from '../ItemsComponents/ItemCartView/CartView.js'
-import NotFound from '../PageNotFound/NotFound.js';
+import NavBar from '../components/NavBarComponents/NavBar/NavBar.js';
+import NavBarProducts from '../components/NavBarComponents/NavBarProducts/NavBarProducts.js';
+import ItemListContainer from '../components/ItemsComponents/ItemListContainer/ItemListContainer.js';
+import ItemDetailContainer from '../components/ItemsComponents/ItemDetailContainer/ItemDetailContainer.js';
+import CartView from '../components/ItemsComponents/ItemCartView/CartView.js';
+import NotFound from '../components/PageNotFound/NotFound.js';
 import './Routes.css';
 
 const Routes = () => {

@@ -1,6 +1,8 @@
+import Swal from 'sweetalert';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore, doc, getDoc, getDocs, setDoc, addDoc, query, where, collection, Timestamp } from 'firebase/firestore/lite';
+import alertStyle from './alertStyle.css';
 
 const firebaseConfig = {
   apiKey: "AIzaSyB2-pwanlI36oxe8GgwRSXGWHiHl_ZWGCQ",
@@ -76,8 +78,16 @@ export async function createBuyOrder(orderData) {
 
   const orderDoc = await addDoc(MyCollection, orderWithBuyDate);
 
-  console.log('Orden lista con ID: ', orderDoc.id);
-  console.log('Orden lista con data: ', orderDoc.data());
+  const showAlert = () => {
+    Swal({
+      title: "Purchase Made!",
+      text: `Your order ID is: ${orderDoc.id}`,
+      icon: "success",
+      button: "Great!"
+    })
+  }
+
+  showAlert();
 }
 
 // ------------------------------------------------------------------------------------------------------

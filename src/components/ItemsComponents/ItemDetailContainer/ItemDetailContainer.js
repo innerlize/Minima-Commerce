@@ -30,7 +30,7 @@ function ItemDetailContainer() {
   }, [itemId]);
 
   return (
-    <section>
+    <section className='productContainer'>
         <ItemDetail product={product} />
     </section>
   );
