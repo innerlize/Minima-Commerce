@@ -10,7 +10,7 @@ function NavBarProducts() {
 				<li><Link to='/Minima-Commerce/category/keyboard'>KEYBOARDS</Link></li>
 				<li><Link to='/Minima-Commerce/category/mouse'>MOUSES</Link></li>
 				<li><Link to='/Minima-Commerce/category/monitor'>MONITORS</Link></li>
-				<li><Link to='/Minima-Commerce/category/mousepad'>MOUSEPADS</Link></li>
+				<li><Link to='/Minima-Commerce/category/headset'>HEADSETS</Link></li>
 			</ul>
 		</nav>
 	)

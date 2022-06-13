@@ -11,9 +11,6 @@ const Item = ({ product }) => {
       <Card.Body>
         <Card.Title>{product.name}</Card.Title>
         <Card.Text>
-          {product.desc}
-        </Card.Text>
-        <Card.Text>
           ${product.price}
         </Card.Text>
         <Link to={`/Minima-Commerce/item/${product.id}`}>

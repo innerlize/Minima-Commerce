@@ -1,22 +1,23 @@
 .unicItem {
-	width: 50%;
+	width: 75%;
 	height: 100% !important;
 	text-align: center !important;
 	background-color: #222222 !important;
 	border: none !important;
-	margin-bottom: 20px !important;
+	display: flex;
+	flex-direction: row;
 }
 
 .unicItem img {
-	max-height: 250px !important;
+	max-width: 500px;
 	object-fit: cover !important;
 }
 
 .unicItem .card-body {
-	display: flex !important;
-	flex-direction: column !important;
-	justify-content: center !important;
-	align-items: center !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding: 15px !important;
 }
 
@@ -36,16 +37,11 @@
 }
 
 .unicItem .card-body p:nth-child(3) {
-	margin: 5px 0 !important;
-}
-
-.unicItem .card-body p:nth-child(4) {
+	font-size: 25px;
 	font-weight: 400 !important;
-	margin: 0 0 5px 0 !important;
-}
-
-.unicItem .card-body p:nth-child(5) {
-	font-weight: 400 !important;
+	margin-top: 30px !important;
+	padding: 10px 20px !important;
+	background-color: #333333;
 }
 
 .unicItem button {

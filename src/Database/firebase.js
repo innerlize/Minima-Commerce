@@ -2,6 +2,7 @@ import Swal from 'sweetalert';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore, doc, getDoc, getDocs, setDoc, addDoc, query, where, collection, Timestamp } from 'firebase/firestore/lite';
+import products from './products.js';
 import alertStyle from './alertStyle.css';
 
 const firebaseConfig = {

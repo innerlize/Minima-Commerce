@@ -3,10 +3,10 @@ import { Card, Button } from 'react-bootstrap';
 import './ItemCount.css';
 
 const ItemCount = ({ stock, onAdd }) => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(1);
 
   const restCounter = () => {
-    if (counter <= 0) return;
+    if (counter <= 1) return;
     setCounter(counter - 1);
   };
 

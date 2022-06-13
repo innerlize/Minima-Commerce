@@ -31,12 +31,9 @@
 }
 
 .item .card-body p:nth-child(2) {
-	margin: 5px 0 !important;
-}
-
-.item .card-body p:nth-child(3) {
 	font-weight: 400;
-	margin: 0 0 5px 0 !important;
+	margin: 20px 0 10px 0 !important;
+
 }
 
 .item button {
