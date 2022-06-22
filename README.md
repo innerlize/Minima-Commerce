@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 
 React project made as a final project delivery in the Coderhouse React course.
 
@@ -6,7 +6,7 @@ The main idea of the project was to create a simple, minimalist, but very nice e
 
 
 
-# How did you make this project?
+## How did you make this project?
 
 In this project I made use of multiple tools, such as:
 
@@ -22,7 +22,7 @@ This project was deployed to the GitHub page thanks to the installation of "gh-p
 
 
 
-# Can I see your uploaded project?
+## Can I see your uploaded project?
 
 Of course!
 
