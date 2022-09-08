@@ -1,6 +1,6 @@
 ## Introduction
 
-React project made as a final project delivery in the Coderhouse React course.a
+React project made as a final project delivery in the Coderhouse React course.
 
 The main idea of the project was to create a simple, minimalist, but very nice e-commerce page where people can buy their peripherals in a very easy and comfortable way from the comfort of their home.
 
